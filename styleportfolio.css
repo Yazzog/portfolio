@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     text-align: justify;
     overflow: hidden;
-    /*media-querie*/
+    align-items: stretch;
 }
 
 @media screen and (max-width: 1440px) {
@@ -32,16 +32,13 @@ body{
 
 .elmenu{
     display: flex;
-    position: relative;
     transition: 150ms ease-in-out ;
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 .immenu{
-    flex: auto;
-    max-width: 100%;
-    position: relative;
+    width: 100%;
     z-index: -2;
     overflow: hidden;
 }
@@ -53,7 +50,10 @@ body{
     color: rgb(223, 223, 223);
     position: absolute;
     z-index: -1;
+}
 
+h1{
+    text-align: left;
 }
 
 .elmenu:hover{
