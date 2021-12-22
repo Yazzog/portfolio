@@ -10,6 +10,13 @@ body{
     width: 100%;
 }
 
+@media screen and (max-width: 1440px) {
+    .line{
+        flex-direction: column;
+    }
+
+}
+
 .bannerpres{
     width: 100%;
     transform: translateY(-40%);
@@ -85,6 +92,10 @@ main img{
     width: auto;
     margin-right: -30px;
     margin-left: 30px;
+}
+
+div.paragraphe.line{
+    flex-direction: row;
 }
 
 .portrait{
