@@ -17,19 +17,40 @@ body{
 
 }
 
+.banner{
+    display: flex;
+}
+
+.banner:hover .bannerperso,.banner:hover .bannerpres,.banner:hover .bannerpro{
+    filter: brightness(50%);
+}
+
 .bannerpres{
     width: 100%;
     transform: translateY(-40%);
+    z-index: 0;
 }
 
 .bannerperso{
     width: 100%;
-    transform: translateY(-40%)
+    transform: translateY(-40%);
+    z-index: 0;
 }
 
 .bannerpro{
     width: 100%;
     transform: translateY(-60%);
+    z-index: 0;
+}
+
+.tbanner{
+    position: absolute;
+    z-index:1;
+    color: rgb(223, 223, 223);
+}
+
+.tbannerperso{
+    color: rgb(129, 129, 129)
 }
 
 header{
